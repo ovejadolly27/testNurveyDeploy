@@ -1,0 +1,9 @@
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\bin\Debug\netcoreapp2.0\EntidadesNurvey.deps.json
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\bin\Debug\netcoreapp2.0\EntidadesNurvey.dll
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\obj\Debug\netcoreapp2.0\EntidadesNurvey.csprojResolveAssemblyReference.cache
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\obj\Debug\netcoreapp2.0\EntidadesNurvey.csproj.CoreCompileInputs.cache
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\obj\Debug\netcoreapp2.0\EntidadesNurvey.AssemblyInfoInputs.cache
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\obj\Debug\netcoreapp2.0\EntidadesNurvey.AssemblyInfo.cs
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\bin\Debug\netcoreapp2.0\EntidadesNurvey.pdb
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\obj\Debug\netcoreapp2.0\EntidadesNurvey.dll
+c:\users\dolly\source\repos\NurveyProyectCore\EntidadesNurvey\obj\Debug\netcoreapp2.0\EntidadesNurvey.pdb

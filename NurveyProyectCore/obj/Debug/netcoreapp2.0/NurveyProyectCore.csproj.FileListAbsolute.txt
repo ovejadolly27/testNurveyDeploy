@@ -1,0 +1,16 @@
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\DAONurvey.dll
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\EntidadesNurvey.dll
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.csprojResolveAssemblyReference.cache
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.csproj.CoreCompileInputs.cache
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.AssemblyInfoInputs.cache
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.AssemblyInfo.cs
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\NurveyProyectCore.deps.json
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\NurveyProyectCore.runtimeconfig.json
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\NurveyProyectCore.runtimeconfig.dev.json
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\NurveyProyectCore.dll
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\NurveyProyectCore.pdb
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\DAONurvey.pdb
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\bin\Debug\netcoreapp2.0\EntidadesNurvey.pdb
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.csproj.CopyComplete
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.dll
+c:\users\dolly\source\repos\NurveyProyectCore\NurveyProyectCore\obj\Debug\netcoreapp2.0\NurveyProyectCore.pdb
