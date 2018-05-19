@@ -19,8 +19,6 @@ namespace DAONurvey
     /// </summary>
     public class DAOUsuario
     {
-        public static string connectionString = "Data Source=nurveyback.sytes.net;Integrated Security=False;User ID=NurveyDB;Password=ADM357357*+;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
         /// <summary>
         /// Este método inserta un usuario en la base de datos.
         /// Recibe por parámetro un objeto usuario.
@@ -30,7 +28,7 @@ namespace DAONurvey
         {
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
@@ -64,7 +62,7 @@ namespace DAONurvey
             List<Usuario> listaUsuarios = new List<Usuario>();
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
@@ -128,7 +126,7 @@ namespace DAONurvey
         {
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
@@ -158,7 +156,7 @@ namespace DAONurvey
         {
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
@@ -187,7 +185,7 @@ namespace DAONurvey
             Usuario usuario = new Usuario();
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
@@ -246,7 +244,7 @@ namespace DAONurvey
             Usuario usuario = new Usuario();
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
@@ -287,7 +285,7 @@ namespace DAONurvey
             Usuario usuario = new Usuario();
             try
             {
-                SqlConnection cn = new SqlConnection(connectionString);
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
