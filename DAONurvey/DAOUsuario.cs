@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EntidadesNurvey;
 using System.Data.SqlClient;
-using System.Configuration;
-using Microsoft.IdentityModel.Protocols;
+using System.Configuration; 
 
 /// <summary>
 /// Este proyecto contiene las clases que proporcionan el acceso a la base de datos.
