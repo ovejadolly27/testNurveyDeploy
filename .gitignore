@@ -10,3 +10,6 @@ EntidadesNurvey/obj/
 NurveyProyectCore/bin/
 
 NurveyProyectCore/obj/
+
+\.vs/
+*.dll
