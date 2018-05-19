@@ -1,0 +1,15 @@
+
+DAONurvey/bin/
+
+DAONurvey/obj/
+
+EntidadesNurvey/bin/
+
+EntidadesNurvey/obj/
+
+NurveyProyectCore/bin/
+
+NurveyProyectCore/obj/
+
+\.vs/
+*.dll
