@@ -18,7 +18,7 @@ namespace NurveyProyectCore.Controllers
             this.UsuariosRepository = new UsuarioRepository();
         }
 
-        //[HttpPost]
+        [HttpPost]
         public IActionResult Post(Usuario usuario)
         {
             this.UsuariosRepository.SaveUsuario(usuario);
@@ -27,6 +27,7 @@ namespace NurveyProyectCore.Controllers
 
             return Ok(usuario);
         }
+
         [Route("filtro/{filtro}")]
         [HttpGet]
         public Usuario[] Get(string filtro)
@@ -40,9 +41,8 @@ namespace NurveyProyectCore.Controllers
             return UsuariosRepository.GetAllUsuarios(null);
         }
 
-        [HttpGet("{idUsuario}")]
-        //[Route("IdUsuario/{idUsuario}")]
-        //[HttpGet]
+        [Route("idUsuario/{idUsuario}")]
+        [HttpGet]
         public Usuario Get(int idUsuario)
         {
             return UsuariosRepository.GetUsuario(idUsuario);
@@ -62,7 +62,8 @@ namespace NurveyProyectCore.Controllers
                 return UsuariosRepository.GetUsuarioAutenticado(emailUsuario, passwordUsuario);
             }
         }
-        //[HttpDelete("{idUsuario}")]
+
+        [HttpDelete("{idUsuario}")]
         public Usuario DeleteUsuario(int idUsuario)
         {
             Usuario usuario = this.UsuariosRepository.ObtenerUsuario(idUsuario);
@@ -70,7 +71,7 @@ namespace NurveyProyectCore.Controllers
             return usuario;
         }
 
-        //[HttpPut]
+        [HttpPut]
         public IActionResult Put(Usuario usuario)
         {
             this.UsuariosRepository.ActualizarUsuario(usuario);
