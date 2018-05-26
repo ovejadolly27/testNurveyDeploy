@@ -1,6 +1,9 @@
 dotnet run
 dotnet publish -c release
 
+heroku login
+heroku container:login
+
 sudo docker build -t nurvey-back ./bin/release/netcoreapp2.0/publish
-3115* sudo docker tag nurvey-back registry.heroku.com/nurvey-back/web
- 3116* sudo docker push registry.heroku.com/nurvey-back/web
+sudo docker tag nurvey-back registry.heroku.com/nurvey-back/web
+sudo docker push registry.heroku.com/nurvey-back/web
