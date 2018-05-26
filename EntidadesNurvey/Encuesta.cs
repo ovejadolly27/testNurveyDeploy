@@ -7,7 +7,6 @@ namespace EntidadesNurvey
     public class Encuesta
     {
         public int idEncuesta { get; set; }
-
         public string tituloEncuesta { get; set; }
         public int idCategoriaEncuesta { get; set; }
         public EncuestaSurvey definicion { get; set; }
