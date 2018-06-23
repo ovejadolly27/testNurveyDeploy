@@ -5,10 +5,23 @@ using System.Text;
 using EntidadesNurvey;
 using System.Data.SqlClient;
 
+/// <summary>
+/// Este proyecto contiene las clases que proporcionan el acceso a la base de datos.
+/// Se basa en el lenguaje C#, utiliza SQL (Lenguaje de consulta estructurada) y sirve de interfaz de acceso hacia un servidor Microsoft SQL Server.
+/// </summary>
 namespace DAONurvey
 {
+    /// <summary>
+    /// Esta clase contiene los métodos de acceso a los datos relacionados con las categorías de preguntas.
+    /// Cuenta con los métodos de: Insertar, actualizar, eliminar, consultar categorías.
+    /// </summary>
     public class DAOCategoria
     {
+        /// <summary>
+        /// Este método obtiene todas las categrías almecenadas en la base de datos.
+        /// No recibe ningún parámetro y devuelve una lista de categorías.
+        /// </summary>
+        /// <returns>Lista de objetos Categoría. El objeto categoría posee los siguientes atributos: idCategoria, nombreCategoria, descripcionCategoria:</returns>
         public static Categoria[] ObtenerCategorias()
         {
             List<Categoria> listaCategoria = new List<Categoria>();
@@ -43,6 +56,12 @@ namespace DAONurvey
 
             return listaCategoria.ToArray<Categoria>();
         }
+
+        /// <summary>
+        /// Este método inserta una categoria en la base de datos. 
+        /// Recibe por parámetro un objeto categoria.
+        /// </summary>
+        /// <param name="categoria">Objeto que posee los siguientes atributos: idCategoria,nombreCategoria, descripcionCategoria </param>
         public static void InsertarCategoria(Categoria categoria)
         {
             try
@@ -66,6 +85,12 @@ namespace DAONurvey
                 Console.WriteLine(mensaje);
             }
         }
+
+        /// <summary>
+        /// Este método actualiza una categoria en la base de datos. 
+        /// Recibe por parámetro un objeto categoria.
+        /// </summary>
+        /// <param name="categoria">Objeto que posee los siguientes atributos: idCategoria, nombreCategoria, descripcionCategoria </param>
         public static void ActualizarCategoria(Categoria categoria)
         {
             try
@@ -91,6 +116,11 @@ namespace DAONurvey
 
         }
 
+        /// <summary>
+        /// Este método elimina una categoria en la base de datos. 
+        /// Recibe por parámetro el id de la categoría a eliminar.
+        /// </summary>
+        /// <param name="idCategoria">ID (int) de la categoría a eliminar. Por ejemplo: 27</param>
         public static void EliminarCategoria(int idCategoria)
         {
             try
@@ -114,7 +144,12 @@ namespace DAONurvey
 
         }
 
-        //obtener tipo de pregunta para cargar combobox
+        /// <summary>
+        /// Este método obtiene una categoría almacenada en la base de datos.
+        /// Recibe por parámetro el id de categoría a consultar y devuelve la categoría que se corresponde con ese id.
+        /// </summary>
+        /// <param name="idCategoria">ID (int) de la categoría a consultar. Por ejemplo: 27</param>
+        /// <returns>Objeto que posee los siguientes atributos: (idCategoria, nombreCategoria, descripcionCategoria)</returns>
         public static Categoria ObtenerCategorias(int idCategoria)
         {
             Categoria categoria = new Categoria();

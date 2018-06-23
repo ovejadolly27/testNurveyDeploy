@@ -4,9 +4,6 @@ using System.Linq;
 using System.Data.SqlClient;
 using EntidadesNurvey;
 
-
-
-
 /// <summary>
 /// Este proyecto contiene las clases que proporcionan el acceso a la base de datos.
 /// Se basa en el lenguaje C#, utiliza SQL (Lenguaje de consulta estructurada) y sirve de interfaz de acceso hacia un servidor Microsoft SQL Server.
@@ -100,6 +97,7 @@ namespace DAONurvey
 
             return idPregunta;
         }
+
         /// <summary>
         /// Este método actualiza los datos de una pregunta almacenada en la base de datos.
         /// Recibe por parámetro una pregunta con los atributos a editar.
