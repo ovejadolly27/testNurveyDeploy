@@ -114,6 +114,12 @@ namespace DAONurvey
             return rs;
         }
 
+        /// <summary>
+        /// Este método obtiene los datos de los resultados de una pregunta de una encuesta.
+        /// Recibe por parámetro el id del usuario y devuelve un objeto Resultados Graficos.
+        /// </summary>
+        /// <param name="idUsuario">ID (int) de la encuesta a consultar. Por ejemplo: 59</param>
+        /// <returns>Objeto ResultadosGraficos que posee los siguientes atributos: (labels (lista de strings, series (lista de doubles))</returns>
         public static ResultadosGraficos ObtenerDatosEncuestasXUsuario(int idUsuario)
         {
             ResultadosGraficos rs = new ResultadosGraficos();
