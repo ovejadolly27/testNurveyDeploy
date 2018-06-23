@@ -6,6 +6,5 @@ sudo heroku container:login
 
 sudo docker build -t nurvey-back ./bin/release/netcoreapp2.0/publish
 sudo docker tag nurvey-back registry.heroku.com/nurvey-back/web
-sudo docker push registry.heroku.com/nurvey-back/web
-
+heroku container:release web --app=nurvey-back
 Nurvey357*+
