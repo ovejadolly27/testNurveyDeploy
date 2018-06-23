@@ -285,7 +285,7 @@ namespace DAONurvey
             Usuario usuario = new Usuario();
             try
             {
-                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion  );
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
