@@ -14,8 +14,8 @@ using System.Configuration;
 namespace DAONurvey
 {
     /// <summary>
-    /// Esta clase contiene los métodos de acceso a los datos relacionados con la Encuesta.
-    /// Cuenta con los métodos de: Insertar, modificar, consultar y eliminar una Encuesta.
+    /// Esta clase contiene los métodos de acceso a los datos relacionados con el Usuario.
+    /// Cuenta con los métodos de: Insertar, modificar, consultar y eliminar un Usuario.
     /// </summary>
     public class DAOUsuario
     {
@@ -285,7 +285,7 @@ namespace DAONurvey
             Usuario usuario = new Usuario();
             try
             {
-                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion  );
+                SqlConnection cn = new SqlConnection(CadenaConexion.cadenaConexion);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
