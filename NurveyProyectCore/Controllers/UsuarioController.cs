@@ -34,7 +34,7 @@ namespace NurveyProyectCore.Controllers
         /// </summary>
         /// <param name="usuario">Objeto que posee los siguientes atributos: (idUsuario, nombreUsuario, emailUsuario, passwordUsuario)</param>
         [HttpPost]
-        public IActionResult Post(Usuario usuario)
+        public IActionResult Post([FromBody] Usuario usuario)
         {
             this.UsuariosRepository.SaveUsuario(usuario);
             //var response = Request.CreateResponse<Usuario>(System.Net.HttpStatusCode.Created, usuario);
@@ -120,7 +120,7 @@ namespace NurveyProyectCore.Controllers
         /// </summary>
         /// <param name="usuario">Objeto que posee los siguientes atributos: (idUsuario, nombreUsuario, emailUsuario, passwordUsuario)</param>
         [HttpPut]
-        public IActionResult Put(Usuario usuario)
+        public IActionResult Put([FromBody] Usuario usuario)
         {
             this.UsuariosRepository.ActualizarUsuario(usuario);
             return Ok(usuario);

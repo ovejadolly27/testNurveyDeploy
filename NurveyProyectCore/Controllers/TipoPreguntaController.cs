@@ -46,7 +46,7 @@ namespace NurveyProyectCore.Controllers
         /// </summary>
         /// <param name="tipoPregunta">Objeto que posee los siguientes atributos: idTipoPregunta,descripcionTipoPregunta, type </param>
         [HttpPost]
-        public IActionResult Post(TipoPregunta tipoPregunta)
+        public IActionResult Post([FromBody] TipoPregunta tipoPregunta)
         {
             this.tiposPreguntasRepository.SaveTipoPregunta(tipoPregunta);
 
