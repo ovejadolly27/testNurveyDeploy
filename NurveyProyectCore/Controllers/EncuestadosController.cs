@@ -47,7 +47,7 @@ namespace NurveyProyectCore.Controllers
         /// </summary>
         /// <param name="encuestado">Objeto que posee los siguientes atributos: idEncuestado, tiempoRespuesta, ubicacion</param>
         [HttpPost]
-        public IActionResult Post(Encuestado encuestado)
+        public IActionResult Post([FromBody] Encuestado encuestado)
         {
             this.encuestadosRepository.SaveEncuestados(encuestado);
             //var response = Request.CreateResponse<Encuestado>(System.Net.HttpStatusCode.Created, encuestado);

@@ -47,7 +47,7 @@ namespace NurveyProyectCore.Controllers
         /// <param name="listaRespuestas">Lista de respuestas. Cada objeto respuesta posee los siguientes atributos: idRespuesta, idPregunta, idEncuesta, idEncuestado, codigoPregunta, descripcionRespuesta</param>
         /// <param name="encuestado">Objeto que posee los siguientes atributos: (idEncuestado, tiempoRespuesta, ubicacion)</param>
         [HttpPost]
-        public IActionResult Post(RespuestaEncuestado respuestaEncuestado)
+        public IActionResult Post([FromBody] RespuestaEncuestado respuestaEncuestado)
         {
             bool guardado = this.respuestasRepository.SaveRespuesta(respuestaEncuestado);
 

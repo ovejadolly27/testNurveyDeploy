@@ -45,7 +45,7 @@ namespace NurveyProyectCore.Controllers
         /// </summary>
         /// <param name="categoria">Objeto que posee los siguientes atributos: idCategoria,nombreCategoria, descripcionCategoria </param>
         [HttpPost]
-        public IActionResult Post(Categoria categoria)
+        public IActionResult Post([FromBody] Categoria categoria)
         {
             this.categoriaRepository.SaveCategoria(categoria);
             //var response = Request.CreateResponse<Categoria>(System.Net.HttpStatusCode.Created, categoria);

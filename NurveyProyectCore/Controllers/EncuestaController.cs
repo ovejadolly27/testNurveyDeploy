@@ -35,7 +35,7 @@ namespace NurveyProyectCore.Controllers
         /// </summary>
         /// <param name="encuesta">Objeto que posee los siguientes atributos: (idEncuesta, tituloEncuesta, definicion, idUsuario, publicado, estadoEncuesta, fechaEncuesta) </param>
         [HttpPost]
-        public IActionResult Post(Encuesta encuesta)
+        public IActionResult Post([FromBody] Encuesta encuesta)
         {
             encuesta.definicionJSON = JsonConvert.SerializeObject(encuesta.definicion);
             int newId = this.encuestasRepository.SaveEncuesta(encuesta);
